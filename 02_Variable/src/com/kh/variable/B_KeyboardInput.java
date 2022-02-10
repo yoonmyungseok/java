@@ -107,4 +107,19 @@ public class B_KeyboardInput {
 		System.out.println("나이: "+age);
 		System.out.println("키: "+height);
 	}
+	public void inputTest3() {
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.print("이름: ");
+		String name=sc.nextLine();
+		
+		System.out.print("나이: ");
+		int age=sc.nextInt();
+		sc.nextLine();
+		
+		System.out.print("주소: ");
+		String address=sc.nextLine();
+		
+		System.out.println(address+"에 사는"+age+" 살 "+name+"님 환영합니다.");
+	}
 }
