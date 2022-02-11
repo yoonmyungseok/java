@@ -36,5 +36,27 @@ public class B_InDecrease {
 		int c=10;
 		int d=c++;
 		System.out.println("c: "+c+", d: "+d);
+		
+	}
+	public void method3() {
+		// 후위 연산
+		int num1=20;
+		int result1=num1++*3;
+		System.out.println("num1: "+num1); // 21
+		System.out.println("result1: "+result1); // 60
+		
+		// 전위 연산
+		int num2=20;
+		int result2=++num2*3;
+		System.out.println("num2: "+num2); //21
+		System.out.println("result2: "+result2); //63
+		
+		// --
+		int num3=10;
+		//int result3=--num3*5; //45
+		int result3=num3--*5;
+		System.out.println("num3: "+num3); // 9
+		System.out.println("result3: "+result3); // 50
+
 	}
 }
