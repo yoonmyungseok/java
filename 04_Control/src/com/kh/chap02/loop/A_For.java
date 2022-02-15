@@ -166,6 +166,115 @@ public class A_For {
 		//4.출력
 		System.out.printf("1부터 %d까지의 총 합은 %d입니다", random,sum);
 	}
+	public void method7() {
+		for(int i=1;i<=9;i++) {
+			System.out.println("1 3 5 7 9");
+		}
+		
+	}
+	
+	public void method8() {
+		// 구구단 2단
+		/*
+		 * 2*1=2
+		 * 2*2=4
+		 * ...
+		 * 2*9=18
+		 * 
+		 */
+		System.out.println("----- 2단 -----");
+		for(int i=1;i<=9;i++) {
+			System.out.println("2 * "+i+" = "+(2*i));
+		}
+	}
+	public void method9() {
+		//사용자로부터 단수를 입력받아서 해당 단 출력
+		System.out.println("----- 구구단 생성기 -----");
+		Scanner sc=new Scanner(System.in);
+		System.out.print("2 ~ 9 사이의 단수 입력: ");
+		int num=sc.nextInt();
+		
+		//2~9사이의 범위가 맞는지 체크
+		if(num>=2&&num<=9) { //진행
+			for(int i=1;i<=9;i++) {
+				System.out.println(num+" * "+i+" = "+(num*i));
+			}
+		}else {
+			System.out.println("잘못 입력했습니다.");
+		}
+	}
+	public void method10() {
+		//2단에서부터 9단까지 모두 다 출력
+		//9단 먼저 찍고 확장
+		for(int i=2;i<=9;i++) {
+			System.out.println("-----"+i+"단-----");
+			for(int j=1;j<=9;j++) {
+				System.out.println(i+" * "+j+" = "+(j*i));
+			}
+		}
+		//총 반복 횟수: 겉의 for문*안쪽 for문
+		//=>72
+	}
+	public void method11() {
+		//1 2 3 4 5
+		//1 2 3 4 5
+		//1 2 3 4 5
+		for(int i=0; i<3;i++) {
+			for(int j=1;j<6;j++) {
+				System.out.print(j+" ");
+			}
+			System.out.println();
+		}
+	}
+	public void method12() {
+		//*****
+		//*****
+		//*****
+		//*****
+		/*
+		for(int i=0;i<4;i++) {
+			for(int j=0;j<5;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		*/
+		for(int i=1;i<=20;i++) {
+			System.out.print("*");
+			if(i%5==0) {
+				System.out.println();
+			}
+		}
+	}
+	public void method13() {
+		//1***
+		//*2**
+		//**3*
+		//***4
+		
+		//크게 4바귀 작게 4바퀴
+		for(int i=1;i<=4;i++) {
+			for(int j=1;j<=4;j++) {
+				if(i==j) {
+					System.out.print(i);
+				}else {
+					System.out.print("*");
+				}
+			}
+			System.out.println();
+		}
+	}
+	public void method14() {
+		//문자열을 입력받아
+		//0번째 글자, 1번째 글자, 2번재 글자를 추출하는 프로그램
+		Scanner sc=new Scanner(System.in);
+		System.out.print("문자열 입력: ");
+		String str=sc.nextLine();
+		
+		for(int i=0;i<3;i++) {
+			System.out.println((i+1)+" 번째 문자: "+str.charAt(i));
+		}
+	}
 	
 }
 

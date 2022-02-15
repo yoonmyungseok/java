@@ -7,6 +7,7 @@ import com.kh.operator.D_LogicalNegation;
 import com.kh.operator.E_Comparison;
 import com.kh.operator.F_Logical;
 import com.kh.operator.G_Triple;
+import com.kh.practice.example.OperatorPractice;
 
 public class Run {
 
@@ -29,11 +30,22 @@ public class Run {
 		//f.method2();
 		//f.method3();
 		//f.method4();
-		G_Triple g=new G_Triple();
+		//G_Triple g=new G_Triple();
 		//g.method1();
 		//g.method2();
 		//g.method3();
-		g.method4();
+		//g.method4();
+		OperatorPractice op=new OperatorPractice();
+		//op.practice1();
+		//op.practice2();
+		//op.practice3();
+		//op.practice4();
+		//op.practice5();
+		//op.practice6();
+		//op.practice7();
+		//op.practice8();
+		//op.practice9();
+		op.practice10();
 	}
 
 }
