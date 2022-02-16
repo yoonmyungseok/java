@@ -276,5 +276,36 @@ public class A_For {
 		}
 	}
 	
+	
+	public void method16() {
+		/*
+		 * 사용자로부터 두 개의 정수값을 입력받은 후에
+		 * 그 사이의 숫자를 모두 출력하는 프로그램
+		 * 
+		 * 정수1 입력: 3
+		 * 정수2 입력: 8
+		 * 3 4 5 6 7 8
+		 */
+		Scanner sc=new Scanner(System.in);
+		System.out.print("정수1 입력: ");
+		int num1=sc.nextInt();
+		sc.nextLine();
+		System.out.print("정수2 입력: ");
+		int num2=sc.nextInt();
+		sc.nextLine();
+		if(num1<num2) {
+			for(int i=num1;i<=num2;i++) {
+				System.out.print(i+" ");
+			}
+		}else if(num1>num2) {
+			for(int i=num1;i>=num2;i--) {
+				System.out.print(i+" ");
+			}
+		}else {
+			System.out.println("정수1과 정수2의 값이 동일합니다");
+		}
+		
+	}
+	
 }
 
