@@ -25,7 +25,11 @@ public class ArrayRun {
 		//b.method4();
 		//b.method5();
 		C_DimensionalArray c=new C_DimensionalArray();
-		c.method1();
+		//c.method1();
+		//c.method2();
+		//c.method3();
+		//c.method4();
+		c.method5();
 	}
 
 }
