@@ -45,6 +45,27 @@ public class Student {
 	public void setAge(int age) {
 		this.age=age;
 	}
-	//키 setter 메소드 숙제(setHeight)
+	//키값을 기록 및 수정할 수 있는 기능의 메소드(height라는 필드에 값을 대입하는 용도)
+	public void setHeight(double height) {
+		this.height=height;
+	}
+	//데이터를 반환해주는 기능의 메소드: getter 메소드
+	//name이라는 필드에 담긴 값을 돌려주는 용도의 메소드
+	public String getName() {
+		//반환할 내용물=>return 구문
+		return name;
+	}
+	//age라는 필드에 담긴 값을 돌려주는 용도의 메소드
+	public int getAge() {
+		return age;
+	}
+	//height라는 필드에 담긴 값을 돌려주는 용도의 메소드
+	public double getHeight() {
+		return height;
+	}
+	/*
+	 * setter와 getter 메소드들까지 만들어주는것이 캡슐화이다
+	 * =>필드마다 꼭 1개씩은 만들어줘야한다
+	 */
 }
 
