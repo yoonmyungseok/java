@@ -8,12 +8,26 @@ public class Book {
 	 * 가격: price
 	 * 할인율: discountRate (0.1일 경우 10프로 할인)
 	 */
+	
+	//필드
 	private String title;
 	private String publisher;
 	private String author;
 	private int price;
 	private double discountRate=0.1;
 	
+	//생성자
+	public Book() {
+		
+	}
+	
+	public Book(String title, String publisher, String author, int price, double discountRate) {
+		this();
+		this.price = price;
+		this.discountRate = discountRate;
+	}
+	
+	//메소드
 	public String getTitle() {
 		return title;
 	}
