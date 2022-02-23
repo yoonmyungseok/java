@@ -1,4 +1,4 @@
-package com.kh.chp02_objectArray.model.vo;
+package com.kh.chap02_objectArray.model.vo;
 
 public class Phone {
 	private String name;
@@ -53,7 +53,5 @@ public class Phone {
 	public String information() {
 		return "Phone [name=" + name + ", series=" + series + ", brand=" + brand + ", price=" + price + "]";
 	}
-	
-	
 	
 }

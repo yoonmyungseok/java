@@ -1,6 +1,6 @@
-package com.kh.chp02_objectArray.run;
+package com.kh.chap02_objectArray.run;
 
-import com.kh.chp02_objectArray.model.vo.Phone;
+import com.kh.chap02_objectArray.model.vo.Phone;
 
 public class ObjectArrayRun {
 
