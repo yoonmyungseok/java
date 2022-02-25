@@ -1,0 +1,35 @@
+package com.kh.chap01_poly.part01_basic.model.vo;
+
+public class Child2 extends Parent{
+	private int n;
+
+	public Child2() {
+		super();
+	}
+
+	public Child2(int x, int y, int n) {
+		super(x, y);
+		this.n = n;
+	}
+
+	public int getN() {
+		return n;
+	}
+
+	public void setN(int n) {
+		this.n = n;
+	}
+
+	@Override
+	public String toString() {
+		return "Child2 [n=" + n + ",x=" + getX() + ", y=" + getY() + "]";
+	}
+	
+	public void printChild2() {
+		System.out.println("나 두 번째 자식이야");
+	}
+	@Override
+	public void print() {
+		System.out.println("나 두 번째 자식이야");
+	}
+}
