@@ -35,6 +35,7 @@ public class C_StringTokenizerTest {
 		
 		//더이상 뽑아낼 토큰이 있나? 라는 조건을 제시하면 while문 사용 가능
 		//StringTokenizer 클래스에서 제공하는 hasMoreTokens() 메소드
+		//=>StringTokenizer 객체로부터 더이상 뽑아낼 토큰이 있는 경우에 true를 반환
 		while(stn.hasMoreTokens()) {
 			System.out.println(stn.nextToken());
 		}
