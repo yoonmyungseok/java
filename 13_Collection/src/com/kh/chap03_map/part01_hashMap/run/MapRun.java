@@ -11,7 +11,7 @@ public class MapRun {
 
 	public static void main(String[] args) {
 		HashMap<String, Snack> hm = new HashMap<>();
-		//게층 구조를 보면 List나 Set 계열은 Collection 인터페이스를 구현한 클래스들
+		//계층 구조를 보면 List나 Set 계열은 Collection 인터페이스를 구현한 클래스들
 		//=>데이터를 추가할 때 add 메소드를 사용함
 		//단, Map은 부모가 애초에 Collection이 아님
 		//=>데이터를 추가할 때 put 메소드 사용(key+value 세트로 추가)
